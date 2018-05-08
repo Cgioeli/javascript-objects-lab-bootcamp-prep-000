@@ -86,8 +86,10 @@ describe('Objects', function() {
     it('modifies the original object', function() {
       var obj = { prop: 1 }
       var newObj = destructivelyDeleteFromObjectByKey(obj, 'prop');
-
+      function destructivelyDeleteFromObjectByKey(object, key){
+        delete[obj]
       expect(obj['prop']).toBe(undefined)
+      }
     })
   })
 
