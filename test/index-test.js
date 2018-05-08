@@ -65,7 +65,7 @@ describe('Objects', function() {
     it('does not modify the original object (it is non-destructive)', function() {
       function deleteFromObjectByKey(object, key){
       var obj = { prop: 1 }
-      delete[object]
+      delete obj[key]
       deleteFromObjectByKey(obj, 'prop')
       expect(obj['prop']).toBe(1)
       }
