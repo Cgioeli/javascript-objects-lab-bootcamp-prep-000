@@ -54,7 +54,7 @@ describe('Objects', function() {
     it('deletes `key` from a clone of object and returns the new object (it is non-destructive)', function() {
       var obj = { prop: 1 }
       var newObj = deleteFromObjectByKey(obj, 'prop')
-      function deleteFromObjectByKey(){
+      function newObj(){
       var newObj = Object.assign({},obj)
       delete newObj[obj]
       return newObj
