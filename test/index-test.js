@@ -36,7 +36,7 @@ describe('Objects', function() {
       var obj = { prop: 1 }
       function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
         obj.key = "value"
-        return recipe
+        return obj
       }
       expect(destructivelyUpdateObjectWithKeyAndValue(obj, 'prop2', 2)).toMatch({
         prop: 1,
