@@ -22,7 +22,7 @@ describe('Objects', function() {
 
     it('it does not modify the original object, but rather returns a clone with the new data', function() {
       var obj = { prop: 1 }
-
+      function updateObjectWithKeyAndValue
       updateObjectWithKeyAndValue(obj, 'prop2', 2)
 
       expect(obj['prop2']).toBe(undefined)
