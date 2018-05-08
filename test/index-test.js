@@ -2,14 +2,19 @@
 
 describe('Objects', function() {
   it('defines a `recipes` object', function() {
+    var recipes = {};
     expect(typeof recipes).toEqual('object')
   })
 
   describe('updateObjectWithKeyAndValue(object, key, value)', function() {
     it('returns an object with the orignal key value pairs and the new key value pair', function() {
       var obj = { prop: 1 }
-
-      expect(updateObjectWithKeyAndValue(obj, 'prop2', 2)).toMatch({
+      function updateObjectWithKeyAndValue(object, key, value){
+        recipe[key] = value
+        return recipe
+      expect(updateObjectWithKeyAndValue(obj, 'prop2', 2)).toMatch
+      }
+      ({
         prop: 1,
         prop2: 2
       })
