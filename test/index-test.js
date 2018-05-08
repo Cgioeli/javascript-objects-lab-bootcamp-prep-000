@@ -55,7 +55,7 @@ describe('Objects', function() {
       var obj = { prop: 1 }
       var newObj = deleteFromObjectByKey(obj, 'prop')
       function deleteFromObjectByKey(){
-      delete
+      delete newObj
       expect(newObj['prop']).toBe(undefined)
       }
     })
